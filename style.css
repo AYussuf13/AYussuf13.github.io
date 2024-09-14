@@ -39,9 +39,7 @@ body > header {
 }
 #slogan{
     color:#009688;
-    padding: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 20px 0 10px;
 }
 #nav-ul{
     display: flex;
@@ -145,13 +143,12 @@ body .main-header .card-wrapper{
 
 
 
-
-
 body > footer {
     background-color: #009688;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 90px;
+
 }
 
 body > footer > h2 {
@@ -161,7 +158,6 @@ body > footer > h2 {
     font-family: "Fredoka One", "Arial Bold" ;
     width: 20%;
     border-radius: 16%;
-
 
 }
 
@@ -179,5 +175,6 @@ body > footer > h2 {
     text-decoration: none;
     color: #E3E3E3;
 }
+
 
   
