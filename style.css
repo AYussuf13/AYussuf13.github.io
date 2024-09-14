@@ -1,7 +1,12 @@
-body {
-    font-family: Helvetica, Arial, sans-serif;  
-    margin: 0px;
-    font-size: 1.75vw;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(#E3E3E3, #009688);
+    height: 100%;
+    
 }
 
 #logo {
@@ -10,7 +15,13 @@ body {
     font-family: "Fredoka One", "Arial Bold" ;
     width: 20%;
     border-radius: 16%;
+    color: #009688;
 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 ul {
@@ -19,14 +30,19 @@ ul {
 
 
 body > header {
-    background-color: orange;
+    background-color:#E3E3E3;
     color: #ffffff; 
     display: flex;
     height: 10vh;
     align-items: center;
     justify-content: space-around;
 }
-
+#slogan{
+    color:#009688;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 #nav-ul{
     display: flex;
 
@@ -43,58 +59,125 @@ body > header > nav> ul {
 }
 
 .navbutton{
-    color: white;
+    color: #009688;
     text-decoration: none;
     padding: 12px;
-    border: 1px solid white;
-    border-radius: 20%;
 }
 
-body > main article {
-    width:70% ;
-    margin: auto;
+body .main-header .card-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#E3E3E3, #009688);
 }
 
-#main-content{
+.card-wrapper{
+    margin: 0 60px 35px;
+    overflow: hidden;
+  }
+  
+  .card-list .card-item {
+    list-style: none;
+  }
+  
+  .card-list .card-item .card-link {
+    user-select: none;
+    width: 400px;
+    display:block;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+  }
+  
+  .card-list .card-item .card-link-hover{
+    border-color: #009688;
+  }
+  
+  
+  .card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  .card-list .card-link .first-title{
+    color: #009688;
+    margin: 16px 0 18px;
+    font-size: 500;
+    background: #E3E3E3;
+    width: fit-content;
+    border-radius: 50px;
+  }
+  
+  .card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #009688;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    cursor: pointer;
+    border: 2px solid #009688;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+  }
+  
+  .card-list .card-link:hover .card-button{
+    color: #E3E3E3;
+    background: #009688;
+  }
+  
+  .card-wrapper .swiper-pagination-bullet{
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  }
+  
+  .card-wrapper .swiper-pagination-bullet-active{
+    opacity:1;
+  }
+
+
+
+
+
+body > footer {
+    background-color: #009688;
     display: flex;
     justify-content: space-around;
+    padding: 20px;
 }
 
-#main-content > div{
-    width: 70%;
-}
+body > footer > h2 {
+    color: #ffffff;
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One", "Arial Bold" ;
+    width: 20%;
+    border-radius: 16%;
 
-#main-content aside{
-    list-style: none;
-    color: orange;
-    border: 1px solid black;
-}
-form{
-    text-align: center;
-}
 
-h2 {
-    text-align: center;
-}
-body > footer {
-    background-color: orange;
-    display: flex;
 }
 
 #footer-ul{
     display: flex;
     list-style: none;
+    color: #E3E3E3;
 
 }
 #footer-ul > div > li {
-    margin-left: 12px;
+    margin-left: 52px;
 }
 
 #footer-ul > div  > li > a{
     text-decoration: none;
-    color: white;
+    color: #E3E3E3;
 }
 
-img{
-    border-radius: 50%;
-}
+  
